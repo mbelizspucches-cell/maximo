@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitácora — Blog</title>
+<meta name="description" content="Ideas, notas y artículos sobre tecnología, diseño y vida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Bitácora</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#" class="active">Inicio</a>
+      <a href="#">Artículos</a>
+      <a href="#">Categorías</a>
+      <a href="#">Sobre mí</a>
+      <a href="#" class="btn-subscribe">Suscribirse</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-kicker">Notas semanales</p>
+    <h1>Ideas cortas, bien pensadas.</h1>
+    <p class="hero-sub">Escribo sobre tecnología, producto y las cosas que aprendo por el camino.</p>
+    <form class="subscribe-form" onsubmit="return false;">
+      <input type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="featured">
+    <a href="#" class="featured-card">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=60&auto=format&fit=crop" alt="" loading="eager">
+      <div class="featured-content">
+        <span class="tag">Destacado</span>
+        <h2>Cómo construimos una web que carga en menos de un segundo</h2>
+        <p>Un repaso práctico a las decisiones de rendimiento que más importan y las que no.</p>
+        <span class="meta">12 sep 2026 · 6 min de lectura</span>
+      </div>
+    </a>
+  </section>
+
+  <section class="posts-header">
+    <h2>Últimos artículos</h2>
+    <div class="filters">
+      <button class="filter active">Todo</button>
+      <button class="filter">Producto</button>
+      <button class="filter">Diseño</button>
+      <button class="filter">Código</button>
+    </div>
+  </section>
+
+  <section class="posts-grid" id="postsGrid">
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Código</span>
+          <h3>Diez trucos de CSS que uso en cada proyecto</h3>
+          <p>Pequeñas técnicas que ahorran horas de trabajo y mejoran la mantenibilidad.</p>
+          <span class="meta">10 sep 2026 · 4 min</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Producto</span>
+          <h3>Por qué la mayoría de los MVPs fallan</h3>
+          <p>No es el código: es la validación. Cinco señales de que vas por mal camino.</p>
+          <span class="meta">8 sep 2026 · 7 min</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Diseño</span>
+          <h3>Sistemas de diseño para equipos pequeños</h3>
+          <p>No necesitas Figma Enterprise para tener consistencia visual.</p>
+          <span class="meta">5 sep 2026 · 5 min</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Código</span>
+          <h3>Guía rápida de Git para principiantes</h3>
+          <p>Los comandos que realmente vas a usar el 90% del tiempo.</p>
+          <span class="meta">2 sep 2026 · 8 min</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Producto</span>
+          <h3>Cómo priorizar cuando todo parece urgente</h3>
+          <p>Un marco simple para decidir qué construir la próxima semana.</p>
+          <span class="meta">30 ago 2026 · 6 min</span>
+        </div>
+      </a>
+    </article>
+
+    <article class="post-card">
+      <a href="#">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
+        <div class="post-body">
+          <span class="tag">Diseño</span>
+          <h3>Tipografía web: lo básico que nadie te explica</h3>
+          <p>Escalas, interlineado y por qué tu texto se ve "raro" en móvil.</p>
+          <span class="meta">27 ago 2026 · 5 min</span>
+        </div>
+      </a>
+    </article>
+
+  </section>
+
+  <div class="load-more-wrap">
+    <button class="load-more">Cargar más artículos</button>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Bitácora. Todos los derechos reservados.</span>
+    <div class="footer-links">
+      <a href="#">RSS</a>
+      <a href="#">Twitter</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

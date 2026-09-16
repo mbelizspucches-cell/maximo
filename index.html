@@ -3,162 +3,309 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bitácora 🚀 — Blog</title>
-<meta name="description" content="Ideas, notas y artículos sobre tecnología, diseño y vida.">
+<title>Chimenea de Bioetanol de Sobremesa — Varello Home</title>
+<meta name="description" content="Chimenea de bioetanol de sobremesa Varello Home: fuego real, sin humo ni instalación. Del tamaño de una copa de vino. Envío gratis y garantía de 30 días.">
+<meta property="og:title" content="Chimenea de Bioetanol de Sobremesa — Varello Home">
+<meta property="og:description" content="Fuego real, sin humo ni instalación. La pieza que convierte cualquier mesa en el rincón favorito de tus noches.">
+<meta property="og:type" content="product">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="announcement-bar">
+  Envío gratis en pedidos a toda España · Garantía de devolución de 30 días
+</div>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="logo">Bitácora <span class="rocket" aria-hidden="true">🚀</span></a>
+    <a href="#top" class="logo">Varello <span class="logo-accent">Home</span></a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="siteNav">
-      <a href="#" class="active">Inicio</a>
-      <a href="#">Artículos</a>
-      <a href="#">Categorías</a>
-      <a href="#">Sobre mí</a>
-      <a href="#" class="btn-subscribe">Suscribirse</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="#precios">Precios</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-nav-cta">Comprar ahora</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <p class="hero-kicker">Notas semanales</p>
-      <h1>Ideas cortas, bien pensadas.</h1>
-      <p class="hero-sub">Escribo sobre tecnología, producto y las cosas que aprendo por el camino.</p>
-      <form class="subscribe-form" onsubmit="return false;">
-        <input type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required>
-        <button type="submit">Suscribirme</button>
-      </form>
-    </div>
-    <div class="hero-visual">
-      <iframe src="hero-3d.html" title="Chimenea de mesa en 3D" loading="lazy"></iframe>
-    </div>
-  </div>
-</section>
+<main id="top">
 
-<main class="container">
-
-  <section class="featured">
-    <a href="#" class="featured-card">
-      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=60&auto=format&fit=crop" alt="" loading="eager">
-      <div class="featured-content">
-        <span class="tag">Destacado</span>
-        <h2>Cómo construimos una web que carga en menos de un segundo</h2>
-        <p>Un repaso práctico a las decisiones de rendimiento que más importan y las que no.</p>
-        <span class="meta">12 sep 2026 · 6 min de lectura</span>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">Varello Home · Edición Lincanto</p>
+        <h1>Chimenea de bioetanol de sobremesa</h1>
+        <p class="hero-sub">Fuego real, sin humo ni instalación. La pieza que convierte cualquier mesa —dentro o fuera de casa— en el rincón favorito de tus noches.</p>
+        <div class="hero-price-row">
+          <span class="hero-price">Desde 69,90&nbsp;€</span>
+        </div>
+        <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-primary">Comprar ahora</a>
+        <p class="hero-trust">Envío gratis · Pago 100% seguro · Garantía de 30 días</p>
       </div>
-    </a>
-  </section>
-
-  <section class="posts-header">
-    <h2>Últimos artículos</h2>
-    <div class="filters">
-      <button class="filter active">Todo</button>
-      <button class="filter">Producto</button>
-      <button class="filter">Diseño</button>
-      <button class="filter">Código</button>
+      <div class="hero-visual">
+        <iframe src="hero-3d.html" title="Chimenea de mesa en 3D" loading="lazy"></iframe>
+      </div>
     </div>
   </section>
 
-  <section class="posts-grid" id="postsGrid">
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Código</span>
-          <h3>Diez trucos de CSS que uso en cada proyecto</h3>
-          <p>Pequeñas técnicas que ahorran horas de trabajo y mejoran la mantenibilidad.</p>
-          <span class="meta">10 sep 2026 · 4 min</span>
-        </div>
-      </a>
-    </article>
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Producto</span>
-          <h3>Por qué la mayoría de los MVPs fallan</h3>
-          <p>No es el código: es la validación. Cinco señales de que vas por mal camino.</p>
-          <span class="meta">8 sep 2026 · 7 min</span>
-        </div>
-      </a>
-    </article>
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Diseño</span>
-          <h3>Sistemas de diseño para equipos pequeños</h3>
-          <p>No necesitas Figma Enterprise para tener consistencia visual.</p>
-          <span class="meta">5 sep 2026 · 5 min</span>
-        </div>
-      </a>
-    </article>
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Código</span>
-          <h3>Guía rápida de Git para principiantes</h3>
-          <p>Los comandos que realmente vas a usar el 90% del tiempo.</p>
-          <span class="meta">2 sep 2026 · 8 min</span>
-        </div>
-      </a>
-    </article>
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Producto</span>
-          <h3>Cómo priorizar cuando todo parece urgente</h3>
-          <p>Un marco simple para decidir qué construir la próxima semana.</p>
-          <span class="meta">30 ago 2026 · 6 min</span>
-        </div>
-      </a>
-    </article>
-
-    <article class="post-card">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=60&auto=format&fit=crop" alt="" loading="lazy">
-        <div class="post-body">
-          <span class="tag">Diseño</span>
-          <h3>Tipografía web: lo básico que nadie te explica</h3>
-          <p>Escalas, interlineado y por qué tu texto se ve "raro" en móvil.</p>
-          <span class="meta">27 ago 2026 · 5 min</span>
-        </div>
-      </a>
-    </article>
-
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon" aria-hidden="true">🚚</span>
+        <span>Envío gratis</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon" aria-hidden="true">🔒</span>
+        <span>Pago 100% seguro</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon" aria-hidden="true">↩️</span>
+        <span>Garantía de 30 días</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon" aria-hidden="true">🪨</span>
+        <span>Cristal, hierro y acero</span>
+      </div>
+    </div>
   </section>
 
-  <div class="load-more-wrap">
-    <button class="load-more">Cargar más artículos</button>
-  </div>
+  <!-- DESEO -->
+  <section class="section desire">
+    <div class="container desire-grid">
+      <div class="photo-frame ph-lifestyle" role="img" aria-label="Chimenea de bioetanol encendida en una terraza al atardecer, junto a olivos y luces cálidas">
+        <!-- Reemplazar por: foto 2 (mesa de piedra, olivos, atardecer) → images/lifestyle-atardecer.jpg -->
+      </div>
+      <div class="desire-text">
+        <p class="section-kicker">Sin cables. Sin gas. Sin instalación.</p>
+        <h2>Una copa de vino. Una llama real. Ningún esfuerzo.</h2>
+        <p>Colócala en la mesa del salón, en la terraza o junto al sofá. Enciéndela en segundos y disfruta de una llama real que no necesita chimenea, ni conexión de gas, ni electricidad. Cuando termines, apágala con el apagallamas incluido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAMAÑO -->
+  <section class="section size">
+    <div class="container size-grid">
+      <div class="size-text">
+        <p class="section-kicker">Dimensiones</p>
+        <h2>Del tamaño de una copa de vino</h2>
+        <p>27 cm de alto x 16 cm de diámetro. Lo suficientemente pequeña para cualquier mesa, lo suficientemente grande para llenar de ambiente toda la habitación.</p>
+        <ul class="check-list">
+          <li>Cabe en mesas auxiliares, de comedor o de exterior</li>
+          <li>Ligera y fácil de trasladar de un espacio a otro</li>
+          <li>Diseño minimalista en negro mate</li>
+        </ul>
+      </div>
+      <div class="photo-frame ph-size" role="img" aria-label="Comparación de tamaño: la chimenea junto a una copa de vino, 27 centímetros de alto por 16 de diámetro">
+        <!-- Reemplazar por: foto 3 (infografía "del tamaño de una copa de vino") → images/tamano-comparacion.jpg -->
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section class="section" id="incluye">
+    <div class="container">
+      <p class="section-kicker center">Qué incluye</p>
+      <h2 class="center">Llega lista para encender</h2>
+      <div class="includes-grid">
+        <div class="photo-frame ph-kit" role="img" aria-label="Piezas incluidas: cilindro de cristal, base de hierro, quemador de acero, piedras decorativas y apagallamas">
+          <!-- Reemplazar por: foto 4 (infografía "llega lista para encender") → images/kit-incluido.jpg -->
+        </div>
+        <ul class="includes-list">
+          <li><strong>Cilindro de cristal</strong> — resistente al calor, protege la llama de corrientes de aire</li>
+          <li><strong>Base de hierro</strong> — acabado negro mate, peso que aporta estabilidad</li>
+          <li><strong>Quemador de acero</strong> — inoxidable, fácil de rellenar y limpiar</li>
+          <li><strong>Piedras decorativas</strong> — incluidas, dan el acabado final al conjunto</li>
+          <li><strong>Apagallamas</strong> — para apagar la llama de forma segura</li>
+        </ul>
+      </div>
+      <p class="note">* El bioetanol no está incluido. Se vende por separado en ferreterías, grandes superficies y tiendas de decoración de exterior.</p>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section benefits">
+    <div class="container">
+      <p class="section-kicker center">Por qué elegirla</p>
+      <h2 class="center">Ambiente real, cero complicaciones</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <span class="benefit-icon" aria-hidden="true">🔥</span>
+          <h3>Llama real, sin humo</h3>
+          <p>El bioetanol arde limpio, sin humo ni olores desagradables.</p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon" aria-hidden="true">🔌</span>
+          <h3>Sin instalación</h3>
+          <p>No requiere gas, chimenea ni electricidad. Solo rellenar y encender.</p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon" aria-hidden="true">🧳</span>
+          <h3>Portátil</h3>
+          <p>Llévala del salón a la terraza, o de la mesa de noche a la sala.</p>
+        </div>
+        <div class="benefit-card">
+          <span class="benefit-icon" aria-hidden="true">🎁</span>
+          <h3>Ideal para regalar</h3>
+          <p>Un regalo con presencia real, perfecto para inauguraciones de casa o parejas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA / DETALLE LLAMA -->
+  <section class="section flame-section">
+    <div class="photo-frame ph-flame" role="img" aria-label="Detalle de la llama ardiendo dentro del cilindro de cristal, con luces cálidas de fondo al atardecer">
+      <!-- Reemplazar por: foto 5 (primer plano de la llama, luces bokeh) → images/flame-detail.jpg -->
+      <div class="flame-overlay">
+        <p>Enciéndela y deja que el resto de la noche fluya sola.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section class="section pricing" id="precios">
+    <div class="container">
+      <p class="section-kicker center">Elige tu pack</p>
+      <h2 class="center">Cuantas más, más ahorras</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>1 unidad</h3>
+          <p class="price-amount">69,90&nbsp;€</p>
+          <p class="price-note">Perfecta para empezar</p>
+          <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-secondary">Comprarla</a>
+        </div>
+        <div class="price-card price-card-highlight">
+          <p class="price-badge">Ideal para regalar en pareja</p>
+          <h3>2 unidades</h3>
+          <p class="price-amount">124,90&nbsp;€</p>
+          <p class="price-note">Ahorras 14,90&nbsp;€</p>
+          <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-primary">Comprarlas</a>
+        </div>
+        <div class="price-card">
+          <h3>3 unidades</h3>
+          <p class="price-amount">169,90&nbsp;€</p>
+          <p class="price-note">Ahorras 39,80&nbsp;€</p>
+          <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-secondary">Comprarlas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTÍA -->
+  <section class="section guarantee">
+    <div class="container guarantee-inner">
+      <span class="guarantee-icon" aria-hidden="true">↩️</span>
+      <h2>Compra sin riesgo</h2>
+      <p>Si no te convence, cuentas con 30 días de garantía de devolución desde la recepción del pedido. Escríbenos desde varellohome.com y te ayudamos con el proceso.</p>
+    </div>
+  </section>
+
+  <!-- RESEÑAS (plantilla — sustituir por reseñas reales antes de publicar) -->
+  <section class="section reviews">
+    <div class="container">
+      <p class="section-kicker center">Reseñas</p>
+      <h2 class="center">Lo que dicen nuestros clientes</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-stars" aria-hidden="true">★★★★★</p>
+          <p class="review-text">[Añade aquí una reseña real de un cliente]</p>
+          <p class="review-author">— [Nombre, ciudad]</p>
+        </div>
+        <div class="review-card">
+          <p class="review-stars" aria-hidden="true">★★★★★</p>
+          <p class="review-text">[Añade aquí una reseña real de un cliente]</p>
+          <p class="review-author">— [Nombre, ciudad]</p>
+        </div>
+        <div class="review-card">
+          <p class="review-stars" aria-hidden="true">★★★★★</p>
+          <p class="review-text">[Añade aquí una reseña real de un cliente]</p>
+          <p class="review-author">— [Nombre, ciudad]</p>
+        </div>
+      </div>
+      <p class="note center">* Sustituye estas reseñas de ejemplo por reseñas reales de tus clientes antes de publicar la web.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <p class="section-kicker center">Preguntas frecuentes</p>
+      <h2 class="center">Todo lo que necesitas saber</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>¿El bioetanol viene incluido?</summary>
+          <p>No. El bioetanol se vende por separado y puedes encontrarlo en ferreterías, grandes superficies o tiendas de decoración de exterior.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Se puede usar en interior y en exterior?</summary>
+          <p>Sí. Al no generar humo ni residuos es apta para ambos espacios, siempre con una ventilación adecuada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué tamaño tiene?</summary>
+          <p>27 cm de alto x 16 cm de diámetro, aproximadamente el tamaño de una copa de vino.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué incluye el paquete?</summary>
+          <p>Cilindro de cristal, base de hierro, quemador de acero, piedras decorativas y apagallamas. El bioetanol no está incluido.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuánto tarda el envío?</summary>
+          <p>[Confirma aquí tu plazo real de envío, por ejemplo: entre 2 y 5 días laborables dentro de España.]</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo devolverla si no me convence?</summary>
+          <p>Sí, cuentas con 30 días de garantía de devolución desde la recepción de tu pedido.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section final-cta">
+    <div class="container final-cta-inner">
+      <h2>Dale a tus noches el ambiente que merecen</h2>
+      <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-primary">Comprar ahora — desde 69,90&nbsp;€</a>
+    </div>
+  </section>
 
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>© 2026 Bitácora. Todos los derechos reservados.</span>
+    <div class="footer-brand">
+      <p class="logo">Varello <span class="logo-accent">Home</span></p>
+      <p>Piezas que dan ambiente real a tu hogar.</p>
+    </div>
     <div class="footer-links">
-      <a href="#">RSS</a>
-      <a href="#">Twitter</a>
-      <a href="#">GitHub</a>
+      <a href="https://varellohome.com">Ir a la tienda</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#precios">Precios</a>
+    </div>
+    <div class="footer-social">
+      <!-- Actualiza estos enlaces con tus redes reales -->
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
     </div>
   </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Varello Home. Todos los derechos reservados.</span>
+  </div>
 </footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <span class="sticky-cta-price">69,90&nbsp;€</span>
+  <a href="https://varellohome.com/products/lincanto-chimenea-bioetanol" class="btn-primary">Comprar ahora</a>
+</div>
 
 <script src="script.js"></script>
 </body>
